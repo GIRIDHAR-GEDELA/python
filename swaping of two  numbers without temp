@@ -1,0 +1,12 @@
+
+a = int(input("Enter the first number (a): "))
+b = int(input("Enter the second number (b): "))
+
+
+a = a + b  # Step 1:
+b = a - b  # Step 2:
+a = a - b  # Step 3:
+
+print("After swapping:")
+print(f"First number (a): {a}")
+print(f"Second number (b): {b}")
