@@ -1,0 +1,12 @@
+import pickle
+
+my_list = [1, 2, 3, 4, 5]
+
+with open('my_list.pickle', 'wb') as file:
+    pickle.dump(my_list, file)
+print("List has been pickled and saved to 'my_list.pickle'")
+
+with open('my_list.pickle', 'rb') as file:
+    loaded_list = pickle.load(file)
+print("List has been unpickled:")
+print(loaded_list)
