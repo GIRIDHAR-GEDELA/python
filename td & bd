@@ -1,0 +1,13 @@
+#Reading & writing textfile
+with open('example.txt', 'w') as file:
+    file.write("Hello World")
+with open('example.txt', 'r') as file:
+    content = file.read()
+print(content) # Output: Hello World
+
+#reading and writing binaryfile
+with open('example.bin', 'wb') as file:
+    file.write(b'Binary data')
+with open('example.bin', 'rb') as file:
+    content = file.read()
+print(content) 
