@@ -1,0 +1,22 @@
+def simple_cal(a,b,op):
+    if op == '+':
+        return a+b
+    elif op == '-':
+        return a-b
+    elif op == '*':
+        return a*b
+    elif op == '/':
+        if a == 0 or b == 0 :
+            print("Operation cannot performed on 0")
+        else:
+            return a/b
+    elif op == '%':
+        if a == 0 or b == 0:
+            print("Operation cannot performed on 0")
+        else:
+            return a%b
+a = float(input("Enter a value: "))
+b = float(input("Enter b value: "))
+op = input("Enter the operator (+,-,*,/,%): ")
+
+simple_cal(a,b,op)
