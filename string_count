@@ -1,0 +1,8 @@
+def str_count(str):
+    count = 0
+    for char in str:
+        count = count+1
+    print(count)
+
+str = input("Enter a String: ")
+str_count(str)
