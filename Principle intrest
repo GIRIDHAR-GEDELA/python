@@ -1,0 +1,10 @@
+def intrest_cal(amount,time,intrest):
+    return(amount*time*intrest)/100
+    
+amount = float(input("Enter Principle Amount: "))
+time = float(input("Enter time period: "))
+intrest = float(input("Enter intrest(%): "))
+
+res = intrest_cal(amount,time,intrest)
+
+print(f"The Principle intrest is{res}rs ")
